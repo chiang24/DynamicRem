@@ -47,7 +47,7 @@ body {
     color: #fff;
     transition: all .8s ease-out;
     height: 0.9rem;
-    border-bottom: 1.5px solid #65D7C5;
+    border-bottom: 1.5px solid #4AC3D6;
 }
 
 
@@ -114,7 +114,7 @@ input {
 
 
 .login-form .submit {
-    background: #65D7C5;
+    background: #4AC3D6;
     height: 1.691rem;
     text-align: center;
     font-size: 0.48rem;
@@ -128,7 +128,7 @@ input {
     text-align: center;
     border: none;
 }
-.SignUp-btn{background: #65D7C5;
+.SignUp-btn{background: #4AC3D6;
     height: 1.691rem;
     text-align: center;
     font-size: 0.48rem;
