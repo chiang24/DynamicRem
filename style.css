@@ -128,9 +128,13 @@ input {
     text-align: center;
     border: none;
 }
-.signUp-form{
-    margin-bottom: 70px;
+.SignUp-btn{background: #65D7C5;
+    height: 1.691rem;
+    text-align: center;
+    font-size: 0.48rem;
+    line-height: 1.691rem;
 }
+
 .signUp-form,
 .login-form{
 

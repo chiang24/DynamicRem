@@ -21,66 +21,70 @@ font-size:${width / 10 * window.devicePixelRatio}px;
     </script>
 </head>
 
-<body> 
-<div class="wrapper">
+<body>
+    <div class="wrapper">
 
-<section class="tabs">
-        <div class="tab" >
-            Log &nbsp;in
-        </div>
-        <div class="tab" >
-            Sign&nbsp; up
-        </div>
-    </section>
-    <section class="main">
-        <div class="login-form" >
-            <form>
-                <label class="fa-lg fa-envelope " >
+        <section class="tabs">
+            <div class="tab active">
+                Log &nbsp;in
+            </div>
+            <div class="tab">
+                Sign&nbsp; up
+            </div>
+        </section>
+        <section class="main">
+            <div class="login-form active">
+                <form>
+                    <label class="fa-lg fa-envelope ">
             <input type="text" placeholder="E-mail">
         </label>
-                <label class=" fa-unlock-alt">
+                    <label class=" fa-unlock-alt">
             <input type="password" placeholder="Password">
         </label>
-      
-                <div class="submit" type="submit">
-                    Sign in
-                </div>
-                  <div class="fgpd">Forgot Password?</div>
-            </form>
-        </div>
-        <div class="signUp-form">
-            <form>
-                <label class="fa-user">
+
+                    <div class="submit" type="submit">
+                        Log in
+                    </div>
+                    <div class="fgpd">Forgot Password?</div>
+                </form>
+            </div>
+            <div class="signUp-form">
+                <form>
+                    <label class="fa-user">
             
                     <input type="text" placeholder="Name">
                 </label>
-                <label class="fa-lg fa-envelope">
+                    <label class="fa-lg fa-envelope">
             <input type="text" placeholder="E-mail">
         </label>
-                <label class="fa-unlock-alt">
+                    <label class="fa-unlock-alt">
             <input type="password" placeholder="Password">
         </label>
-            </form>
-        </div>
-    </section>
+                            <div class="SignUp-btn" type="submit">
+                        Sign up
+                    </div>
+                </form>
+            </div>
+        </section>
 
-    <div class="facebook">
-    <i class="fa fa-facebook" aria-hidden="true"></i>
-    <p>Sign in with Facebook</p>
+        <div class="facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <p>Sign in with Facebook</p>
+        </div>
     </div>
-</div>
-  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script>
-let $tabs = $('.tabs')
-let selector = '.tab'
-console.log($tabs)
-$tabs.on('click', selector, e => {
-  let $tab = $(e.target)
-  console.log($tab)
-  let index = $tab.index()
-  $tab.addClass('active').siblings().removeClass('active')
-  $tab.closest('.tabs').siblings('.main').children('.main>div').eq(index).addClass('active').siblings().removeClass('active')
-})
+        let $tabs = $('.tabs')
+        let selector = '.tab'
+        console.log($tabs)
+        $tabs.on('click', selector, e => {
+            let $tab = $(e.target)
+            console.log($tab)
+            let index = $tab.index()
+            $tab.addClass('active').siblings().removeClass('active')
+            $tab.closest('.tabs').siblings('.main').children('.main>div').eq(index).addClass('active').siblings()
+                .removeClass('active')
+        })
     </script>
 
 </body>
