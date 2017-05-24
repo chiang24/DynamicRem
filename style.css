@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100;
+}
+
+body {
+    background: #2F2E2D;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 8rem;
+    height: 9.662rem;
+    margin-top: -4.748rem;
+    position: absolute;
+    top: 50%;
+}
+
+
+/*tabs*/
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5rem;
+    justify-content: space-around;
+    color: #000;
+}
+
+.tabs>#login {
+    margin-right: 0.966rem;
+    height: 100%;
+}
+
+.tabs .tab.active {
+    color: #fff;
+    transition: all .8s ease-out;
+    height: 0.9rem;
+    border-bottom: 1.5px solid #65D7C5;
+}
+
+
+/*登陆&注册*/
+
+.main {
+    font-size: 0.725rem;
+    margin-top: 1.449rem;
+}
+
+form {
+    border-radius: 0.193rem;
+    border: 0 solid #131313;
+}
+
+label {
+    display: block;
+    height: 1.691rem;
+    position: relative;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    font-size: 0.48rem;
+    border: 0;
+    color: #505050;
+    padding-left: 40px;
+}
+
+.fa-envelope::before {
+    content: '\f0e0';
+    color: #4AC3D6;
+    font-family: 'FontAwesome';
+    transform: translate(20%, -1%);
+    position: absolute;
+    top: 50%;
+    line-height: 0.01;
+    left: 0.16rem;
+}
+
+.fa-unlock-alt::before {
+    content: '\f13e ';
+    color: #4AC3D6;
+    transform: translate(20%, -5%);
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    line-height: .1px;
+    left: 0.2rem;
+    font-size: 0.55rem;
+}
+.fa-user::before{
+        content: '\f007';
+    color: #4AC3D6;
+    transform: translate(20%, -5%);
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    line-height: .1px;
+    left: 0.2rem;
+    font-size: 0.55rem;
+}
+
+
+.login-form .submit {
+    background: #65D7C5;
+    height: 1.691rem;
+    text-align: center;
+    font-size: 0.48rem;
+    line-height: 1.691rem;
+}
+
+.login-form .fgpd {
+    height: 1.691rem;
+    font-size: 0.48rem;
+    line-height: 2.532rem;
+    text-align: center;
+    border: none;
+}
+.signUp-form{
+    margin-bottom: 70px;
+}
+.signUp-form,
+.login-form{
+
+   display: none;
+    transition: visibility 0s 0s linear, opacity .6s ease-out, transform .6s ease-out;
+    transform: translateY(-0.2rem);
+
+} 
+
+
+ .login-form.active,
+ .signUp-form.active {
+
+    display: block;
+    transition: visibility 0s 0s linear, opacity .1s ease-out, transform .6s ease-out;
+    /*transition: all .8s ease-out;*/
+    transform: translateY(0rem);
+    opacity: 1;
+
+}
+
+
+/*facebook*/
+
+.facebook {
+    width: 100%;
+    background: #507CC0;
+    font-size: 0.48rem;
+    height: 1.691rem;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 1.351rem;
+    border-radius: 0.153rem;
+    box-shadow: 0 0.02rem 0.05rem 0#5F86C4;
+    margin-top: 80px;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.fa-facebook {
+    position: absolute;
+    left: 1.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}

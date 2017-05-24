@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font-awesome.css">
+    <script>
+        var scale = 1 / window.devicePixelRatio
+        let link =
+            `<meta name="viewport" content="initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`
+        var width = document.documentElement.clientWidth / window.devicePixelRatio
+        var css = `
+html{
+font-size:${width / 10 * window.devicePixelRatio}px;
+}`
+        document.write(`<style>${css}</style>`)
+    </script>
+</head>
+
+<body> 
+<div class="wrapper">
+
+<section class="tabs">
+        <div class="tab" >
+            Log &nbsp;in
+        </div>
+        <div class="tab" >
+            Sign&nbsp; up
+        </div>
+    </section>
+    <section class="main">
+        <div class="login-form" >
+            <form>
+                <label class="fa-lg fa-envelope " >
+            <input type="text" placeholder="E-mail">
+        </label>
+                <label class=" fa-unlock-alt">
+            <input type="password" placeholder="Password">
+        </label>
+      
+                <div class="submit" type="submit">
+                    Sign in
+                </div>
+                  <div class="fgpd">Forgot Password?</div>
+            </form>
+        </div>
+        <div class="signUp-form">
+            <form>
+                <label class="fa-user">
+            
+                    <input type="text" placeholder="Name">
+                </label>
+                <label class="fa-lg fa-envelope">
+            <input type="text" placeholder="E-mail">
+        </label>
+                <label class="fa-unlock-alt">
+            <input type="password" placeholder="Password">
+        </label>
+            </form>
+        </div>
+    </section>
+
+    <div class="facebook">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <p>Sign in with Facebook</p>
+    </div>
+</div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+let $tabs = $('.tabs')
+let selector = '.tab'
+console.log($tabs)
+$tabs.on('click', selector, e => {
+  let $tab = $(e.target)
+  console.log($tab)
+  let index = $tab.index()
+  $tab.addClass('active').siblings().removeClass('active')
+  $tab.closest('.tabs').siblings('.main').children('.main>div').eq(index).addClass('active').siblings().removeClass('active')
+})
+    </script>
+
+</body>
+
+</html>
