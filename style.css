@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: #2F2E2D;
+    background: #1F1F1F;
     color: #fff;
     height: 100%;
     display: flex;
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 8rem;
+    width: 8.2rem;
     height: 9.662rem;
     margin-top: -4.748rem;
     position: absolute;
