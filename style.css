@@ -32,7 +32,7 @@ body {
     flex-direction: row;
     font-size: 0.5rem;
     justify-content: space-around;
-    color: #000;
+    color: #363636;
 }
 
 .tabs>#login {
@@ -56,24 +56,28 @@ body {
 }
 
 form {
-    border-radius: 0.193rem;
+    border-radius: 0.5rem;
     border: 0 solid #131313;
+    background: #FFFFFF;
+  
 }
-
 
 label {
     display: block;
-    height: 1.691rem;
+    height: 1.5rem;
     position: relative;
 }
 
 input {
     height: 100%;
     width: 100%;
-    font-size: 0.48rem;
+    font-size: 0.4rem;
     border: 0;
     color: #505050;
     padding-left: 0.966rem;
+    border: none;
+    border-width: 0;
+    border-style: none;
 }
 
 .fa-envelope::before {
@@ -113,26 +117,28 @@ input {
 
 .login-form .submit {
     background: #4AC3D6;
-    height: 1.691rem;
+    height: 1.5rem;
     text-align: center;
     font-size: 0.48rem;
     line-height: 1.691rem;
      cursor: pointer;
+
 }
 
 .login-form .fgpd {
-    height: 1.691rem;
-    font-size: 0.48rem;
+    height: 1.5rem;
+    font-size: 0.4rem;
     line-height: 2.532rem;
     text-align: center;
     border: none;
 }
 .SignUp-btn{background: #4AC3D6;
-    height: 1.691rem;
+    height: 1.5rem;
     text-align: center;
     font-size: 0.48rem;
     line-height: 1.691rem;
     cursor: pointer;
+
 }
 
 .signUp-form,
