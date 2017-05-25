@@ -119,6 +119,7 @@ input {
     text-align: center;
     font-size: 0.48rem;
     line-height: 1.691rem;
+     cursor: pointer;
 }
 
 .login-form .fgpd {
@@ -133,12 +134,13 @@ input {
     text-align: center;
     font-size: 0.48rem;
     line-height: 1.691rem;
+    cursor: pointer;
 }
 
 .signUp-form,
 .login-form{
 
-   display: none;
+    display: none;
     transition: visibility 0s 0s linear, opacity .6s ease-out, transform .6s ease-out;
     transform: translateY(-0.2rem);
 
@@ -172,6 +174,7 @@ input {
     margin-top: 80px;
     position: relative;
     padding-left: 1rem;
+     cursor: pointer;
 }
 
 .fa-facebook {

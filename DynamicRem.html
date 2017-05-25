@@ -76,14 +76,13 @@ font-size:${width / 10 * window.devicePixelRatio}px;
     <script>
         let $tabs = $('.tabs')
         let selector = '.tab'
-        console.log($tabs)
+        // console.log($tabs)
         $tabs.on('click', selector, e => {
             let $tab = $(e.target)
-            console.log($tab)
+            //console.log($tab)
             let index = $tab.index()
             $tab.addClass('active').siblings().removeClass('active')
-            $tab.closest('.tabs').siblings('.main').children('.main>div').eq(index).addClass('active').siblings()
-                .removeClass('active')
+            $tab.closest('.tabs').siblings('.main').children('.main>div').eq(index).addClass('active').siblings().removeClass('active')
         })
     </script>
 
