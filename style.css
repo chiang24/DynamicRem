@@ -6,7 +6,7 @@ html {
     min-height: 100;
 }
 body {
-    background: #1F1F1F;
+    background: #030F21;
     color: #fff;
     height: 100%;
     display: flex;
@@ -59,6 +59,7 @@ form {
     border-radius: 0.193rem;
     border: 0 solid #131313;
 }
+
 
 label {
     display: block;
