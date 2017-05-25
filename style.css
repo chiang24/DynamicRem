@@ -75,9 +75,6 @@ input {
     border: 0;
     color: #505050;
     padding-left: 0.966rem;
-    border: none;
-    border-width: 0;
-    border-style: none;
 }
 
 .fa-envelope::before {
@@ -120,7 +117,7 @@ input {
     height: 1.5rem;
     text-align: center;
     font-size: 0.48rem;
-    line-height: 1.691rem;
+    line-height: 1.5rem;
      cursor: pointer;
 
 }
@@ -136,7 +133,7 @@ input {
     height: 1.5rem;
     text-align: center;
     font-size: 0.48rem;
-    line-height: 1.691rem;
+    line-height: 1.5rem;
     cursor: pointer;
 
 }
