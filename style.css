@@ -18,8 +18,8 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 8.2rem;
-    height: 9.662rem;
-    margin-top: -4.748rem;
+    height: 13.662rem;
+    margin-top:-10rem;
     position: absolute;
     top: 50%;
 }
@@ -52,7 +52,8 @@ body {
 
 .main {
     font-size: 0.725rem;
-    margin-top: 1.449rem;
+    margin-top: 0.5rem;
+
 }
 
 form {
@@ -100,7 +101,7 @@ input {
     font-size: 0.55rem;
 }
 .fa-user::before{
-        content: '\f007';
+    content: '\f007';
     color: #4AC3D6;
     transform: translate(20%, -5%);
     font-family: 'FontAwesome';
@@ -118,7 +119,7 @@ input {
     text-align: center;
     font-size: 0.48rem;
     line-height: 1.5rem;
-     cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -137,26 +138,23 @@ input {
     cursor: pointer;
 
 }
-
-.signUp-form,
-.login-form{
-
-    display: none;
+.main>div{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
     transition: visibility 0s 0s linear, opacity .6s ease-out, transform .6s ease-out;
     transform: translateY(-0.2rem);
+     opacity: 0.9;
 
 } 
 
 
- .login-form.active,
- .signUp-form.active {
-
-    display: block;
+.main>div.active {
+    visibility: visible;
     transition: visibility 0s 0s linear, opacity .1s ease-out, transform .6s ease-out;
     /*transition: all .8s ease-out;*/
     transform: translateY(0rem);
     opacity: 1;
-
 }
 
 
@@ -165,22 +163,23 @@ input {
 .facebook {
     width: 100%;
     background: #507CC0;
-    font-size: 0.48rem;
-    height: 1.691rem;
+    font-size: 0.4rem;
+    height: 1.4rem;
     margin-top: 0.966rem;
     text-align: center;
-    line-height: 1.351rem;
+    line-height: 1.35rem;
     border-radius: 0.153rem;
     box-shadow: 0 0.02rem 0.05rem 0#5F86C4;
-    margin-top: 1.932rem;
+    margin-top: 0.6rem;
     position: relative;
     padding-left: 1rem;
-     cursor: pointer;
+    cursor: pointer;
+    top:50%;
 }
 
 .fa-facebook {
     position: absolute;
-    left: 1.3rem;
+    left: 1.8rem;
     top: 50%;
     transform: translateY(-50%);
 }
